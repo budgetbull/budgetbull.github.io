@@ -21,7 +21,7 @@
   // OpenRouter sends the browser here with ?code=…; the app's sign-in sheet is
   // waiting for its own URL scheme, so pass the code straight on.
   var code = new URLSearchParams(location.search).get('code') || '';
-  var target = 'com.anonymous.FinanceAppVitalii://openrouter-auth?code=' + encodeURIComponent(code);
+  var target = 'com.budgetbull.app://openrouter-auth?code=' + encodeURIComponent(code);
   document.getElementById('open').href = target;
   location.replace(target);
 </script>
